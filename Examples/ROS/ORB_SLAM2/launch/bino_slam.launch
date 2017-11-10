@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<node name="bino_stereo" pkg="bino_stereo_ros" type="bino_stereo_ros" output="screen" >
+		<param name="framerate_"        value="60"/> 
+		<param name="video_device" 	    value="/dev/video1" />
+		<param name="camera_frame_id"   value="bino_camera" />
+		<param name="intrinsuc_file"       type="string"      value="/home/li/BINOSDK/ORB_SLAM2/params/intrinsics.yml"/> 
+		<param name="extrinsic_file"       type="string"      value="/home/li/BINOSDK/ORB_SLAM2/params/extrinsics.yml"/> 
+		<remap from="/bino_camera/left/image_rect" to="/image_rect_l"/> 
+		<remap from="/bino_camera/right/image_rect" to="/image_rect_r"/> 
+	</node>
+
+	<node name="orbslam_bino"  pkg="ORB_SLAM2"  type="Bino" output="screen">
+        <param name="vocabulary"     type="string"      value="/home/li/BINOSDK/ORB_SLAM2/Vocabulary/ORBvoc.bin"/>  
+        <param name="settings"       type="string"      value="/home/li/BINOSDK/ORB_SLAM2/Examples/Stereo/BINO3.6.yaml"/>  
+		<param name="intrinsuc_file"       type="string"      value="/home/li/BINOSDK/ORB_SLAM2/params/intrinsics.yml"/> 
+		<param name="extrinsic_file"       type="string"      value="/home/li/BINOSDK/ORB_SLAM2/params/extrinsics.yml"/> 
+	</node>
+</launch>
