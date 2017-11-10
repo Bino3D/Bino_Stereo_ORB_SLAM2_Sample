@@ -1,7 +1,7 @@
 # Bino_Stereo_ORB_SLAM2_Sample
 
 ## 1.使用前准备
-[参见ORB_SLAM2 Prerequisites](https://github.com/raulmur/ORB_SLAM2)
+[参见ORB_SLAM2 README.md的第二章 “2.Prerequisites”](https://github.com/raulmur/ORB_SLAM2)
 * 注意：Prerequisites 中的 Pangolin、Eigen3和OpenCV一定要完成安装
 
 ## 2.编译及使用
@@ -12,7 +12,7 @@ $git clone https://github.com/Bino3D/Bino_Stereo_ORB_SLAM2_Sample.git
 ```
 ###### 下载Bino_Stereo_SDK
 
-[参见](https://github.com/Bino3D/Bino_Stereo_SDK)
+[下载参见此链接](https://github.com/Bino3D/Bino_Stereo_SDK)
 
 下载完成后将Bino_Stereo_SDK的路径加入到环境变量中
 ```
@@ -27,7 +27,7 @@ export BINO_STEREO_SDK=<your_Bino_Stereo_SDK>
 $source ~/.bashrc
 ```
 ###### 安装Bino_Stereo_ROS包
-[参见](https://github.com/Bino3D/Bino_Stereo_ROS)
+[安装参见此链接](https://github.com/Bino3D/Bino_Stereo_ROS)
 
 #### 2.1 ubuntu环境下使用
 
