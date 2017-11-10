@@ -9,10 +9,12 @@
 #Camera.fy: 6.4695013430686686e+02 
 #Camera.cx: 3.9083817928852591e+02 
 #Camera.cy: 2.7960047484314805e+02
-Camera.fx:  5.1390628816379513e+02  
-Camera.fy:  5.1390628816379513e+02 
-Camera.cx:  3.1803433990478516e+02
-Camera.cy:  2.8056865310668945e+02 
+Camera.fx:  4.2660036205155575e+02  
+Camera.fy:  4.2660036205155575e+02 
+Camera.cx:  3.4214534378051758e+02
+Camera.cy:  2.5979896545410156e+02 
+
+
 
 
 #Camera.k1: -4.1902471004150332e-01
@@ -34,7 +36,7 @@ Camera.height: 480
 Camera.fps: 30.0
 
 # stereo baseline times fx
-Camera.bf: 6.3222455129090314e+01
+Camera.bf: 5.2413666039733577e+01
 
 # Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
 Camera.RGB: 1
