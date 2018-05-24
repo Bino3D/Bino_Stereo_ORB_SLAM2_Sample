@@ -102,7 +102,7 @@ target_link_libraries(stereo_euroc ${PROJECT_NAME})
 add_executable(stereo_bino
 	Examples/Stereo/stereo_bino.cc)
 target_link_libraries(stereo_bino ${PROJECT_NAME}
-	${BINO_SDK_LIB_DIR}/libBinoCamera.so)
+	${BINO_SDK_LIB_DIR}/lib_Bino_Camera.so)
 
 add_executable(mono_tum
 Examples/Monocular/mono_tum.cc)
