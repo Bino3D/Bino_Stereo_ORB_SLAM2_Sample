@@ -32,11 +32,14 @@ int main(int argc, char **argv) {
 	float start_time,t_time;
 	start_time = cv::getTickCount()/cv::getTickFrequency();
 	for(;;){
+		camera->Grab();
 		camera->getRectImage(left, right);
 		t_time = (cv::getTickCount()/cv::getTickFrequency()) - start_time;
 		SLAM.TrackStereo(left,right,t_time);
 	}
 	SLAM.Shutdown();
+    std::cout << "save CameraTrajectory.txt" <<std::endl;
+    SLAM.SaveTrajectoryKITTI("CameraTrajectory.txt");
 
 	return 0;
 }
